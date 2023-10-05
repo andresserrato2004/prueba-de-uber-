@@ -1,1 +1,62 @@
+--Uber.sql Juan Andres Rodriguez Peñuela Andres Serrato Camero
+--CICLO 1: Tablas 
+
+CREATE TABLE Vehiculo(
+placa VARCHAR(20),
+a_o NUMBER(4),
+tipo VARCHAR(1),
+estado CHAR(1),
+puertas NUMBER(3) NULL,
+pasajeros NUMBER(3) NULL,
+carga NUMBER(3) NULL
+);
+
+
+CREATE TABLE conductor(
+licencia  VARCHAR(20),
+fechadenacimiento DATE,
+estrellas NUMBER(1),
+estado CHAR(1)
+);
+
+CREATE TABLE persona(
+id NUMBER(9),
+tipo CHAR(2),
+numero VARCHAR(10),
+nombre VARCHAR(50),
+registro DATE,
+celular NUMBER(10),
+correo VARCHAR(50)
+);
+
+CREATE TABLE cliente(
+personaid NUMBER(9),
+idioma VARCHAR(10)
+);
+
+CREATE TABLE presenta(
+clienteid NUMBER(9),
+numerotarjeta NUMBER(15)
+);
+
+CREATE TABLE tarjeta(
+numero NUMBER(15),
+entidad VARCHAR(10),
+vencimiento DATE
+);
+
+CREATE TABLE solicitud(
+codigo NUMBER(9),
+fechacreacion TIMESTAMP,
+fechaViaje TIMESTAMP NULL,
+plataforma VARCHAR(1),
+precio NUMBER (5) NULL,
+estado CHAR(1),
+requerimientos VARCHAR(15) NULL,
+posicion 
+
+
+
+
+
 
