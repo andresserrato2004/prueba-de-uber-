@@ -53,8 +53,44 @@ plataforma VARCHAR(1),
 precio NUMBER (5) NULL,
 estado CHAR(1),
 requerimientos VARCHAR(15) NULL,
-posicion 
+posicionid VARCHAR(20) NOT NULL
+);
 
+
+CREATE TABLE requerimiento(
+solicitudid NUMBER(9),
+requerimiento VARCHAR(15) NULL
+);
+
+CREATE TABLE posicion(
+posid VARCHAR(20)NOT NULL,
+latitud NUMBER(3,2) ,
+longitud NUMBER(3,2)
+);
+
+CREATE TABLE pqrs (
+tiked VARCHAR(13),
+radicacion DATE,
+cierre DATE NULL,
+descripcion VARCHAR(50) NULL,
+tipo CHAR(1),
+estadoPQRS CHAR(1)
+);  
+
+
+CREATE TABLE PQRSrespuesta(
+fecha DATE,
+descripcion VARCHAR(50),
+nombre VARCHAR(20),
+correo VARCHAR(50),
+comentario VARCHAR(20) NULL,
+evaluacion NUMBER(1)NULL
+);
+
+CREATE TABLE anexo (
+nombre VARCHAR(20),
+url VARCHAR(100)
+);
 
 
 
